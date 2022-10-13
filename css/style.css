@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    top:0;
+    left:0;
+    justify-content: space-between;
+    align-items: center;}
+    
+.naranja {
+    top: 40px;
+    position:relative ;
+    text-align: center;
+    color: #F29325
+}
+
+.imagenes{  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    text-align: center;
+}
+
+#titulos {
+    word-wrap: none;
+    color:#025259;
+}
+
+.aqua {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: 30px;
+    color: aliceblue;
+}
+
+.cabañas{
+   float: right;
+}
+
+.cabañas2{
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+.aqua2 {
+    margin-left: 150%;
+    color: aliceblue;
+}
+
+.estilo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    
+.slider{
+    width: 50%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite
+    alternate linear;
+    width: 400%;
+    float: left;
+}
+
+.slider il{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%}
+    70%{margin-left:-200%}
+
+    75%{margin-left:-300%}
+    100%{margin-left:-300%}
+}
+
+
+
+.logo{
+    width: 12%;
+}
+
+.copyright{
+    text-align: center;
+    color: aliceblue;
+}
+
+.menu ul{
+    margin: 0%;
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    flex-grow: 1;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #B7CDC0;;
+}
+
+.lista {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    width: 5e #B7CDC0;
+    width:100%;
+    height:60px;
+    margin:0;
+    position: absolute;
+    z-index:101;
+}
+
