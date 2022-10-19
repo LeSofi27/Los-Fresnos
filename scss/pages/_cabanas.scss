@@ -1,0 +1,31 @@
+.cabanas{
+    @include responsiveTablet{
+        padding-bottom: 60px;
+    }
+
+    @include responsiveCelular{
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+
+    .naranja{
+        @include responsiveCelular{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.cabana-1{
+    @include responsiveTablet{
+        margin-bottom: 60px;
+
+        .aqua{
+            margin-bottom: 35px;
+        }
+    }
+
+}
+
+.cabana-2{
+
+}

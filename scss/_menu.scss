@@ -1,0 +1,80 @@
+header{
+    display: flex;
+    width: 100%;
+    top:0;
+    left:0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    height: 70px;
+    padding: 0% 10%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: $menu;
+
+    @include responsiveCelular{
+        height: auto;
+        padding: 10px 0px;
+    }
+    
+    .logo{
+        width: 50px;
+        display: inline-block;
+
+        @include responsiveCelular{
+            width: 40px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    ul{
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+
+        @include responsiveCelular{
+            width: 100%;
+            flex: 0 0 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            margin-top: 15px;
+            padding: 0px 35px 0px 15px;
+            font-size: 18px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        li{
+            padding: 0px 10px;
+            display: inline-block;
+        
+            a{
+                display: block;
+                color: $aqua;
+                text-decoration: none;
+
+                @include responsiveCelular{
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

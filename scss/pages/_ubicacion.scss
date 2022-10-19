@@ -1,0 +1,17 @@
+.ubicacion{
+    padding-top: 60px;
+
+    @include responsiveCelular{
+        padding-top: 5px;
+        padding-bottom: 45px;
+
+        iframe{
+            margin-bottom: 10px;
+            height: 250px !important;
+        }
+    }
+
+    .naranja{
+        top: 0px;
+    }
+}

@@ -1,0 +1,16 @@
+.sobre-nosotros{
+    padding-top: 120px;
+
+    @include responsiveCelular{
+        padding-top: 25px;
+        padding-bottom: 45px;
+
+        .aqua{
+            margin-bottom: 25px;
+        }
+    }
+
+    .naranja{
+        top: 0px;
+    }
+}

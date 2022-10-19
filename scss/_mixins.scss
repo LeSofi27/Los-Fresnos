@@ -1,0 +1,17 @@
+@mixin responsiveComputador {
+    @media screen and (min-width: $breakpointGrande) {
+        @content;
+    }
+}
+
+@mixin responsiveTablet {
+    @media screen and (min-width: $breakpointMediano) and (max-width: $breakpointGrande) {
+        @content;
+    }
+}
+
+@mixin responsiveCelular {
+    @media screen and (max-width: $breakpointMediano) {
+        @content;
+    }
+}

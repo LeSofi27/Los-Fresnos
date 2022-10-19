@@ -1,0 +1,28 @@
+#titulos {
+    word-wrap: none;
+    color: $titulos;
+}
+
+.naranja {
+    top: 40px;
+    position:relative;
+    text-align: center;
+    color: $naranja;
+
+    @include responsiveTablet{
+        top: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    @include responsiveCelular{
+        top: 0px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.aqua {
+    width: 100%;
+    color: $aqua;
+}

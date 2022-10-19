@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
-    "watch-css": "nodemon -e scss -x \"num run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Sofia Vega",
   "license": "ISC",
