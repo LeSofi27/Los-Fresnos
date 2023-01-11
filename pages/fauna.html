@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/air-datepicker.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/Imagenes/favicon_io/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/Imagenes/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/Imagenes/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/Imagenes/favicon_io/favicon-16x16.png">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- Primary Meta Tags -->
-    <title>Ubicación - Cabañas Los Fresnos</title>
+    <title>Sobre nosotros - Cabañas Los Fresnos</title>
     <meta name="title" content="Cabañas Los Fresnos">
     <meta name="keywords" content="cabañas,vacaciones,pileta,fresnos,los fresnos,campo,aire libre,paisaje">
     <meta name="description"
@@ -47,7 +50,7 @@
                 <li><a href="./cabanas.html"> Cabañas</a></li>
                 <li><a href="./contacto.html"> Contacto</a></li>
                 <li><a href="./ubicacion.html"> Ubicación</a></li>
-                <li><a href="./fauna.html"> Fauna</a></li>
+                <li><a href="./#"> Fauna</a></li>
                 <li>
                     <a href="javascript:void(0);" id="mostrar-carrito">
                         <img src="../assets/Imagenes/iconos/shopping-cart.png" alt="Carrito">
@@ -77,25 +80,36 @@
         </div>
     </div>
 
-    <main>
-        <section class="ubicacion">
+    <main class="sobre-nosotros">
+        <section>
             <div class="container">
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-12">
-                        <h2 class="naranja">Ubicación</h2>
+                        <h1 class="naranja">Fauna</h1>
                     </div>
                 </div>
 
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-12">
-                        <iframe src="https://goo.gl/maps/uXaX63EuLyoaFSK19" width="100%" height="450" style="border:0;"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!-- Ubicación Google Maps -->
-                    </div>
-
-                    <div class="col-xl-6 col-12">
-                        <p class="aqua">Ruta 205 - km 82 ingreso a Uribellarrea (Cañuelas) - Quintas Los Fresnos - calle
-                            Avda Los Fresnos 100.</p>
+                <div class="row justify-content-between">
+                    <div class="col-12">
+                        <div class="swiper" id="fauna-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/Imagenes/fauna/1.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../assets/Imagenes/fauna/2.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../assets/Imagenes/fauna/3.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../assets/Imagenes/fauna/4.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../assets/Imagenes/fauna/5.jpeg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,8 +139,12 @@
         </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="../js/air-datepicker.js" type="text/javascript"></script>
     <script src="../js/general.js" type="text/javascript"></script>
+    <script src="../js/fauna.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -4,8 +4,10 @@
     right: -310px;
     width: 300px;
     z-index: 98;
+    overflow: auto;
     position: fixed;
-    padding: 15px 25px;
+    max-height: 80vh;
+    padding-top: 15px;
     border-radius: 7px;
     background-color: $menu;
 
@@ -22,6 +24,16 @@
 
         @include responsiveCelular{
             top: 110px;
+        }
+    }
+
+    .row{
+        &:last-child{
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0px;
+            position: sticky;
         }
     }
 
@@ -52,10 +64,22 @@
     }
 
     &-footer{
-        padding-top: 5px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
+        padding: 10px 25px 10px;
+        background-color: $menu;
         justify-content: space-between;
+        border-top: solid 1px #f1f1f1;
+    }
+
+    &-limpiar{
+        border: none;
+        display: block;
+        font-size: 14px;
+        appearance: none;
+        margin: 4px auto 0px;
+        background-color: transparent;
     }
 
     .ir-a-pagar{
@@ -63,16 +87,24 @@
         color: #fff;
         font-size: 16px;
         appearance: none;
-        padding: 7px 20px;
+        padding: 4px 20px;
         border-radius: 7px;
         background-color: $naranja;
     }
 }
 
 .item-carrito{
-    padding: 7px 0px;
     align-items: center;
-    border-bottom: solid 1px #f1f1f1;
+    padding: 0px 25px 7px;
+
+    &:not(:first-child)::before{
+        content: '';
+        height: 1px;
+        width: 100%;
+        display: block;
+        margin: 0px 8px 7px;
+        background-color: #f1f1f1;
+    }
 
     &-imagen{
         img{
@@ -102,6 +134,10 @@
     }
 
     &-botones{
+        display: flex;
+        align-items: center;
+        padding-top: 8px;
+
         button{
             border: none;
             appearance: none;
@@ -110,13 +146,22 @@
             img{
                 width: 26px;
             }
+
+            &.eliminar-reserva{
+                width: 30px;
+                padding: 0px 8px;
+                margin-top: -4px;
+
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 
     input{
-        width: 100%;
+        flex: 1;
         padding: 4px;
-        margin-top: 8px;
         cursor: pointer;
         font-size: 14px;
         border-radius: 4px;
